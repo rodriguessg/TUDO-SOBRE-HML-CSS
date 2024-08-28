@@ -1,0 +1,142 @@
+/*RETIRA MARGIN E PADDINF AUTOMÁTICOS*/
+
+/*box model*/
+/*developer mozila    BOX-SIZING sempre deixa o elemento dentro do  pai*/
+
+/*Importando fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* :root pode ser utilizado para armazenar uma várivale global possibilitando ser chamado em outra parte do código */
+:root {
+    --cor-principal: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria:#22D4FD;
+    --cor-hover:#272727;
+
+    --font-prmaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+.cabecalho {
+    /* Padding valores */
+    padding: 2% 0%  0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.titulo-destaque {
+    color:var(--cor-terciaria);
+}
+
+/*flex-box*/
+.apresentacao {
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+   
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: var(--font-prmaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: var(--font-secundaria);
+}
+
+
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*espaco das colunas*/
+    gap: 32px;
+   
+
+}
+
+
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-prmaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link {
+    /* comentar é ctrl + k + c */
+    /* background-color: #22d4fd; */
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600 ;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    /* Posicionamento de itens */
+    display: flex;
+    justify-content: center;
+    gap:16px;
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+.cabecalho__menu__link:hover {
+
+    border-bottom:1px solid var(--cor-terciaria);
+    translate:initial ;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-principal);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+/* Posicionamento de itens */
+/*developer mozila    BOX-SIZING sempre deixa o elemento dentro do  pai*/
+/*https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox*/
+
+/* ESSE É MELHOR https://css-tricks.com/snippets/css/a-guide-to-flexbox/   */
+
+/* :root pode ser utilizado para armazenar uma várivale global possibilitando ser chamado em outra parte do código */
